@@ -1,0 +1,55 @@
+---
+title: "On Missing Data"
+subtitle: "What It Is, Why It's Important, and What You Should Do About It"
+author: Brooklin Becker
+thanks: "Special thanks to..."
+date: today
+date-format: long
+format: pdf
+number-sections: true
+bibliography: references.bib
+---
+
+
+
+# What Is Missing Data?
+ 
+## What Makes Data ‘Missing’?
+*Missing data* refers to variables which are missing or incomplete within research datasets [@osborne]. For a variable to be considering as missing data implies that the integrity of its measurement was not captured during data collection [@rohan]. As a result, the incompleteness or *missingness* of the variable preclude the intended inherent observation. Of course, some missing data may be *legitimate* wherein the absence of data is consequential of the observation the observation being made [@osborne]. Conversely, *illegitimately* missing data occurs due to factors such as data collection or entry errors, technical or observational issues, or participant non-response which may occur during data collection, interfering with the integrity of the measurement [@osborne].
+ 
+## Missingness
+To best understand the relationship between successfully measured variables, and “the probability of missing data,” [@baraldi] *mechanisms of missingness* are integral to analysis. These mechanisms aim to explain why the data are missing, and how to best test its probability using missing data techniques [@osborne]. The mechanisms are as follows:
+ 
+1. **Missing Completely at Random (MCAR)** - Data are MCAR when there is no systematic phenomenon which explains the missingness; it is simply happening at random [@little]. It is rare for data to be MCAR, and it is certainly hard to empirically prove data are MCAR [@rohan].
++ For example, consider a situation where research is being done on the relationship between free menstrual products in the workplace and employee satisfaction. Due to time constraints and staffing shortages, some employees fail to complete or fill out the survey provided to them. Therefore, the reason for the missing data is unrelated to employee satisfaction based on availability of free menstrual products, but rather the employees' fiscal inability to complete the survey.
+2. **Missing at Random (MAR)** - Data are MAR when there is a predictable or systematic phenomenon which explains its missingness [@little]. As such, the impact of the missingness can be estimated and proven [@little].
++ For example, suppose a shopping conglomerate is attempting to collect data on their top consumers. However, because the data collection involves questions detailing age, gender, and sexual orientation, some consumers abdicate from responding. In this situation, the missingness is not directly related to the unobserved values of the data but rather the comfort level of the individual responding.
+3. **Missing Not at Random (MNAR)** - Data are MNAR when its missingness has a direct, systematic relationship to the value of that variable [@rohan].
++ For example, consider data collection being done on the amount of marijuana smokers in Salt Lake City, Ohio. Due to the prevalence of Mormonism in Salt Lake City, marijuana smokers may not disclose their use due to fear of religious consequences or social backlash. In this scenario, the usage of marijuana has a direct influence on whether or not the individual is willing to disclose the infromation.
+ 
+# Why is Missing Data Important?
+ 
+Missing data, and the missingness *of* data, must be carefully considered whenever it is encountered. Missingness can be both meaningful, and indicative of a future analytical bias. Missingness can “[inform] and [reinforce] the status of a particular individual,” or “produce answers that are biased, inefficient, and unreliable” [@osborne]. In other words, missing data can affect the integrity of the overall dataset and therefore any precision of conclusions made from it. The effect of the missing data must therefore be critically considered and analyzed in order to mitigate its impact [@osborne].
+ 
+# What Should You Do About Missing Data?
+ 
+Once mechanism of missingness is established, carefully consider which *missing data procedure* you plan to apply. For the purpose of this short paper, we will look at imputation methods as possible solutions to mitigate missing data, as they retain all available data and reduce the risk of false negatives in results [@bennett]. Imputation methods replace missing variable with possible values imputed by standardized methods [@bennett].
+ 
+## Mean Imputation
+ 
+Mean imputation is advantageous as a missing data procedure in a variety of cases as it is a relatively simple method. Mean imputation replaces missing variables with the mean of the observed or 'successful' value for that variable [@schafer]. To input the mean, a second dataset must be constructed with the missing data removed so that the mean of such column can be calculated [@rohan].
+ 
+It is worth nothing mean imputation does offer risk for bias wherein resulting estimates will often be either too large, or too small for the true value of the missing data [@little].
+ 
+## Multiple Imputation
+ 
+By repeating the process of mean imputation (or other missing data procedures) several times, multiple imputation is achieved. As several different datasets are created and individually analyzed, uncertainty is quantified and can be accounted for in a statistical manner [@rohan; @schafer]. Additionally, the pooling of these results from multiple imputations captures variability and yields more precise estimates of missing data parameters [@schafer]. Multiple imputation is therefore valuble in identifying "structural or casual relationships among variables" [@schafer].
+ 
+It is worth noting the validity of multiple imputation does rely on the integrity of the models and imputations created in the first place [@schafer].
+
+\newpage
+
+
+# References
+
+
