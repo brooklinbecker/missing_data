@@ -2,7 +2,7 @@
 title: "On Missing Data"
 subtitle: "What It Is, Why It's Important, and What You Should Do About It"
 author: Brooklin Becker
-thanks: "Special thanks to..."
+thanks: "Special thanks to Samantha Barfoot for her time and energy spent peer-editing this paper."
 date: today
 date-format: long
 format: pdf
@@ -39,13 +39,16 @@ Once mechanism of missingness is established, carefully consider which *missing 
  
 Mean imputation is advantageous as a missing data procedure in a variety of cases as it is a relatively simple method. Mean imputation replaces missing variables with the mean of the observed or 'successful' value for that variable [@schafer]. To input the mean, a second dataset must be constructed with the missing data removed so that the mean of such column can be calculated [@rohan].
  
-It is worth nothing mean imputation does offer risk for bias wherein resulting estimates will often be either too large, or too small for the true value of the missing data [@little].
+It is worth noting mean imputation does offer risk for bias wherein resulting estimates will often be either too large, or too small for the true value of the missing data [@little].
  
 ## Multiple Imputation
  
 By repeating the process of mean imputation (or other missing data procedures) several times, multiple imputation is achieved. As several different datasets are created and individually analyzed, uncertainty is quantified and can be accounted for in a statistical manner [@rohan; @schafer]. Additionally, the pooling of these results from multiple imputations captures variability and yields more precise estimates of missing data parameters [@schafer]. Multiple imputation is therefore valuble in identifying "structural or casual relationships among variables" [@schafer].
  
 It is worth noting the validity of multiple imputation does rely on the integrity of the models and imputations created in the first place [@schafer].
+
+## Your Role
+Do take caution when dealing with missing data to recognize the role provenance plays in the ethical and responsible manipulation and analysis of data. No matter what missing data procedure you choose to employ, record every decision you make and every observation consequential to that decision to ensure transparency.  
 
 \newpage
 
